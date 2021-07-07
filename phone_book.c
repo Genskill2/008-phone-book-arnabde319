@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
     exit(0);
   } else if (strcmp(argv[1], "search") == 0) {  /* Handle search */
        /* TBD  */
-    File *fp = open_db_file();
+    FILE *fp = open_db_file();
     char *name=argv[2];
     entry *p=load_entries(fp);
     entry *base=p;
